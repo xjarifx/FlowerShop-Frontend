@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { sliderImages } from "../data/siteData";
+import OptimizedImage from "./OptimizedImage";
 
 export default function Slider() {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -45,7 +46,7 @@ export default function Slider() {
                 data-slide="true"
                 className="aspect-square w-[clamp(16rem,30vw,28rem)] shrink-0 snap-start overflow-hidden rounded-[2.2rem]"
               >
-                <img
+                <OptimizedImage
                   src={image.image_path}
                   alt={image.image_alt}
                   loading="lazy"

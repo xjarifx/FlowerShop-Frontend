@@ -1,4 +1,5 @@
 import { galleryItems } from "../data/siteData";
+import OptimizedImage from "./OptimizedImage";
 
 export default function Gallery() {
   return (
@@ -27,7 +28,7 @@ export default function Gallery() {
                 </div>
 
                 <div className="overflow-hidden rounded-3xl">
-                  <img
+                  <OptimizedImage
                     src={item.image_path}
                     alt={item.name}
                     loading="lazy"

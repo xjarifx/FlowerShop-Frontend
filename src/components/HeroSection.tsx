@@ -1,5 +1,6 @@
 import SpecialOffer from "./SpecialOffer";
 import { heroSection } from "../data/siteData";
+import OptimizedImage from "./OptimizedImage";
 
 export default function HeroSection() {
   return (
@@ -10,7 +11,7 @@ export default function HeroSection() {
         </h1>
 
         <div className="relative mt-6 overflow-hidden rounded-4xl">
-          <img
+          <OptimizedImage
             src={heroSection.image_path}
             alt={heroSection.image_alt}
             loading="eager"

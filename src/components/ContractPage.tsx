@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import OptimizedImage from "./OptimizedImage";
 
 const keyTerms = [
   "A signed agreement and 30% retainer confirms your date.",
@@ -52,7 +53,7 @@ export default function ContractPage() {
         <div className="mt-8 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="space-y-7">
             <div className="overflow-hidden rounded-3xl">
-              <img
+              <OptimizedImage
                 src="/assets/6.jpg"
                 alt="Floral contract planning"
                 loading="lazy"

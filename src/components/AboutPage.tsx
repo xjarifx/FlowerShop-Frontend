@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import OptimizedImage from "./OptimizedImage";
 
 const featureImages = [
   { src: "/assets/6.jpg", alt: "Pink stems" },
@@ -32,7 +33,7 @@ export default function AboutPage() {
           <div>
             <div className="grid gap-5 md:grid-cols-[minmax(0,17rem)_1fr] md:items-start">
               <div className="overflow-hidden rounded-2xl">
-                <img
+                <OptimizedImage
                   src="/assets/owner.jpg"
                   alt="Founder portrait"
                   loading="lazy"
@@ -56,7 +57,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-8 grid grid-cols-3 gap-4">
               {featureImages.map((image) => (
-                <img
+                <OptimizedImage
                   key={image.src}
                   src={image.src}
                   alt={image.alt}
@@ -74,7 +75,7 @@ export default function AboutPage() {
             </div>
 
             <div className="mt-8 overflow-hidden rounded-2xl">
-              <img
+              <OptimizedImage
                 src="/assets/28.jpg"
                 alt="Pink tulips"
                 loading="lazy"

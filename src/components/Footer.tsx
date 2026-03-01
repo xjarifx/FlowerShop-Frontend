@@ -1,11 +1,12 @@
 import { footerSection } from "../data/siteData";
+import OptimizedImage from "./OptimizedImage";
 
 export default function Footer() {
   return (
     <footer id="contact" className="bg-zinc-100 px-4">
       <div className="w-full overflow-hidden rounded-t-3xl">
         <div className="relative">
-          <img
+          <OptimizedImage
             src={footerSection.image_path}
             alt={footerSection.image_alt}
             loading="lazy"

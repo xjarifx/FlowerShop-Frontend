@@ -1,4 +1,5 @@
 import { services } from "../data/siteData";
+import OptimizedImage from "./OptimizedImage";
 
 export default function GalleryServices() {
   return (
@@ -26,7 +27,7 @@ export default function GalleryServices() {
                   </div>
 
                   <div className="overflow-hidden rounded-3xl">
-                    <img
+                    <OptimizedImage
                       src={service.image_path}
                       alt={service.title}
                       loading="lazy"

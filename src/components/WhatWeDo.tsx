@@ -1,3 +1,5 @@
+import OptimizedImage from "./OptimizedImage";
+
 const services = [
   {
     number: "1",
@@ -43,7 +45,7 @@ export default function WhatWeDo() {
                 {service.number}
               </p>
 
-              <img
+              <OptimizedImage
                 src={service.image}
                 alt={service.title}
                 loading="lazy"

@@ -1,11 +1,12 @@
 import About from "./About";
+import OptimizedImage from "./OptimizedImage";
 
 export default function WorkWithUsSection() {
   return (
     <section className="bg-zinc-100 px-4 pb-24 sm:pb-28">
       <div className="mx-auto max-w-400">
         <div className="overflow-hidden rounded-3xl">
-          <img
+          <OptimizedImage
             src="/assets/27.jpg"
             alt="Purple flower arrangement"
             loading="lazy"
