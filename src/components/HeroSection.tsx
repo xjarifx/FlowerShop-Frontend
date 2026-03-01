@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="bg-zinc-100 px-4 pb-8">
       <div className="mx-auto max-w-300">
-        <h1 className="font-['Caprasimo'] text-[clamp(3.2rem,11vw,9.2rem)] leading-[0.95] text-zinc-900">
+        <h1 className="font-brand text-[clamp(3.2rem,11vw,9.2rem)] leading-[0.95] text-zinc-900">
           {heroSection.title}
         </h1>
 

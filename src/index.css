@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
@@ -14,4 +13,20 @@ body {
     Helvetica,
     Arial,
     sans-serif;
+}
+
+#root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.font-brand {
+  font-family: "Caprasimo", serif;
 }

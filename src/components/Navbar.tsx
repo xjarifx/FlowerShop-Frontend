@@ -5,7 +5,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <a
             href="/"
-            className="font-['Caprasimo'] text-4xl leading-none text-zinc-900"
+            className="font-brand text-4xl leading-none text-zinc-900"
           >
             Our Blooms
           </a>

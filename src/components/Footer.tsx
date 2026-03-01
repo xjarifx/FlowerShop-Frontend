@@ -13,7 +13,7 @@ export default function Footer() {
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent" />
 
-          <p className="absolute bottom-6 left-1/2 -translate-x-1/2 font-['Caprasimo'] text-5xl leading-none text-white sm:text-6xl md:text-7xl">
+          <p className="font-brand absolute bottom-6 left-1/2 -translate-x-1/2 text-5xl leading-none text-white sm:text-6xl md:text-7xl">
             {footerSection.brand}
           </p>
 
