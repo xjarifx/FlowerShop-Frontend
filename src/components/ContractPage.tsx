@@ -32,7 +32,7 @@ const processSteps = [
 export default function ContractPage() {
   return (
     <section className="bg-zinc-100 px-4 py-10 sm:py-14">
-      <div className="mx-auto max-w-300">
+      <div className="mx-auto max-w-400">
         <div className="rounded-3xl border border-zinc-300 bg-white/60 p-6 sm:p-8">
           <p className="text-xs font-semibold tracking-wide text-zinc-600 uppercase">
             Floral Service Agreement
@@ -53,7 +53,7 @@ export default function ContractPage() {
               <img
                 src="/assets/17.jpg"
                 alt="Floral contract planning"
-                className="h-72 w-full object-cover sm:h-96"
+                className="h-96 w-full object-cover sm:h-128"
               />
             </div>
 

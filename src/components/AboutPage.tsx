@@ -17,7 +17,7 @@ const closingParagraphs = [
 export default function AboutPage() {
   return (
     <section className="bg-zinc-100 px-4 py-10 sm:py-12">
-      <div className="mx-auto max-w-[1200px]">
+      <div className="mx-auto max-w-400">
         <h1 className="text-4xl font-extrabold text-zinc-900 uppercase sm:text-5xl">
           ABOUT
         </h1>

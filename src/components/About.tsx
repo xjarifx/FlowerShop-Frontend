@@ -17,7 +17,7 @@ export default function About({
 }: AboutProps) {
   return (
     <section id={id} className={sectionClassName}>
-      <div className="mx-auto max-w-[1200px] text-center">
+      <div className="mx-auto max-w-400 text-center">
         <p className="text-sm font-extrabold tracking-wide text-zinc-700 uppercase">
           {eyebrow}
         </p>

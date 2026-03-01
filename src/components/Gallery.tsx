@@ -3,7 +3,7 @@ import { galleryItems } from "../data/siteData";
 export default function Gallery() {
   return (
     <section id="gallery" className="bg-zinc-100 px-4 py-14 sm:py-18">
-      <div className="mx-auto max-w-[1200px]">
+      <div className="mx-auto max-w-400">
         <h2 className="text-4xl font-extrabold text-zinc-900 uppercase sm:text-5xl">
           GALLERY
         </h2>

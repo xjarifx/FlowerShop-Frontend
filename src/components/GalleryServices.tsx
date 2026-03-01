@@ -3,7 +3,7 @@ import { services } from "../data/siteData";
 export default function GalleryServices() {
   return (
     <section className="bg-zinc-100 px-4 pb-14 sm:pb-18">
-      <div className="mx-auto max-w-[1200px]">
+      <div className="mx-auto max-w-400">
         <div className="grid gap-6 lg:grid-cols-[9rem_1fr] lg:gap-8">
           <p className="pt-1 text-[0.62rem] font-semibold tracking-wide text-zinc-700 uppercase">
             SERVICES

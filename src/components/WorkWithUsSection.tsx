@@ -3,12 +3,12 @@ import About from "./About";
 export default function WorkWithUsSection() {
   return (
     <section className="bg-zinc-100 px-4 pb-24 sm:pb-28">
-      <div className="mx-auto max-w-[1200px]">
+      <div className="mx-auto max-w-400">
         <div className="overflow-hidden rounded-3xl">
           <img
             src="/assets/27.jpg"
             alt="Purple flower arrangement"
-            className="h-[18rem] w-full object-cover sm:h-[24rem] md:h-[30rem]"
+            className="h-96 w-full object-cover sm:h-112 md:h-128"
           />
         </div>
       </div>
