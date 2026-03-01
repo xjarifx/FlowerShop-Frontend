@@ -9,7 +9,7 @@
     "hero_sections": [
       {
         "id": 1,
-        "title": "Our Blooms®",
+        "title": "Our Blooms",
         "image_path": "/assets/hero.jpg",
         "image_alt": "Featured flower arrangement"
       }
@@ -103,7 +103,7 @@
       },
       {
         "id": 3,
-        "image_path": "/assets/54.jpg",
+        "image_path": "/assets/20.jpg",
         "image_alt": "Slider flower 3"
       },
       {

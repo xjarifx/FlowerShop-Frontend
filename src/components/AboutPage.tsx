@@ -17,7 +17,7 @@ const closingParagraphs = [
 export default function AboutPage() {
   return (
     <section className="bg-zinc-100 px-4 py-10 sm:py-12">
-      <div className="mx-auto max-w-[980px]">
+      <div className="mx-auto max-w-[1200px]">
         <h1 className="text-4xl font-extrabold text-zinc-900 uppercase sm:text-5xl">
           ABOUT
         </h1>
@@ -69,7 +69,7 @@ export default function AboutPage() {
 
             <div className="mt-8 overflow-hidden rounded-2xl">
               <img
-                src="/assets/20.jpg"
+                src="/assets/28.jpg"
                 alt="Pink tulips"
                 className="aspect-[16/7] w-full object-cover"
               />

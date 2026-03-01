@@ -10,14 +10,14 @@ type AboutProps = {
 export default function About({
   id = "about",
   eyebrow = "WHO WE ARE",
-  title = "We're Our Blooms® and we're here to help you find your floral story.",
+  title = "We're Our Blooms and we're here to help you find your floral story.",
   ctaLabel = "ABOUT US",
   ctaHref = "/about",
   sectionClassName = "bg-zinc-100 px-4 py-24 sm:py-28",
 }: AboutProps) {
   return (
     <section id={id} className={sectionClassName}>
-      <div className="mx-auto max-w-4xl text-center">
+      <div className="mx-auto max-w-[1200px] text-center">
         <p className="text-sm font-extrabold tracking-wide text-zinc-700 uppercase">
           {eyebrow}
         </p>

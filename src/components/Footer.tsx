@@ -3,7 +3,7 @@ import { footerSection } from "../data/siteData";
 export default function Footer() {
   return (
     <footer id="contact" className="bg-zinc-100 px-4">
-      <div className="mx-auto max-w-[1200px] overflow-hidden rounded-3xl rounded-b-none">
+      <div className="w-full overflow-hidden rounded-t-3xl">
         <div className="relative">
           <img
             src={footerSection.image_path}
