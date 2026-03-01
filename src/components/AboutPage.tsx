@@ -1,3 +1,8 @@
+import {
+  getCompressedImageSrc,
+  handleCompressedImageFallback,
+} from "../utils/compressedImage";
+
 const featureImages = [
   { src: "/assets/6.jpg", alt: "Pink stems" },
   { src: "/assets/27.jpg", alt: "Red bloom" },
@@ -31,8 +36,11 @@ export default function AboutPage() {
             <div className="grid gap-5 md:grid-cols-[minmax(0,17rem)_1fr] md:items-start">
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="/assets/owner.jpg"
+                  src={getCompressedImageSrc("/assets/owner.jpg")}
+                  onError={handleCompressedImageFallback("/assets/owner.jpg")}
                   alt="Founder portrait"
+                  loading="lazy"
+                  decoding="async"
                   className="aspect-square w-full object-cover"
                 />
               </div>
@@ -54,8 +62,11 @@ export default function AboutPage() {
               {featureImages.map((image) => (
                 <img
                   key={image.src}
-                  src={image.src}
+                  src={getCompressedImageSrc(image.src)}
+                  onError={handleCompressedImageFallback(image.src)}
                   alt={image.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="aspect-square w-full rounded-2xl object-cover"
                 />
               ))}
@@ -69,8 +80,11 @@ export default function AboutPage() {
 
             <div className="mt-8 overflow-hidden rounded-2xl">
               <img
-                src="/assets/28.jpg"
+                src={getCompressedImageSrc("/assets/28.jpg")}
+                onError={handleCompressedImageFallback("/assets/28.jpg")}
                 alt="Pink tulips"
+                loading="lazy"
+                decoding="async"
                 className="aspect-[16/7] w-full object-cover"
               />
             </div>

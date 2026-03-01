@@ -1,4 +1,8 @@
 import About from "./About";
+import {
+  getCompressedImageSrc,
+  handleCompressedImageFallback,
+} from "../utils/compressedImage";
 
 export default function WorkWithUsSection() {
   return (
@@ -6,8 +10,11 @@ export default function WorkWithUsSection() {
       <div className="mx-auto max-w-400">
         <div className="overflow-hidden rounded-3xl">
           <img
-            src="/assets/27.jpg"
+            src={getCompressedImageSrc("/assets/27.jpg")}
+            onError={handleCompressedImageFallback("/assets/27.jpg")}
             alt="Purple flower arrangement"
+            loading="lazy"
+            decoding="async"
             className="h-96 w-full object-cover sm:h-112 md:h-128"
           />
         </div>

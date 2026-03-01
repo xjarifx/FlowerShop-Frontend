@@ -1,4 +1,8 @@
 import { services } from "../data/siteData";
+import {
+  getCompressedImageSrc,
+  handleCompressedImageFallback,
+} from "../utils/compressedImage";
 
 export default function GalleryServices() {
   return (
@@ -27,8 +31,13 @@ export default function GalleryServices() {
 
                   <div className="overflow-hidden rounded-3xl">
                     <img
-                      src={service.image_path}
+                      src={getCompressedImageSrc(service.image_path)}
+                      onError={handleCompressedImageFallback(
+                        service.image_path,
+                      )}
                       alt={service.title}
+                      loading="lazy"
+                      decoding="async"
                       className="aspect-[4/3] w-full object-cover"
                     />
                   </div>

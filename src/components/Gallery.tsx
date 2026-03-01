@@ -1,4 +1,8 @@
 import { galleryItems } from "../data/siteData";
+import {
+  getCompressedImageSrc,
+  handleCompressedImageFallback,
+} from "../utils/compressedImage";
 
 export default function Gallery() {
   return (
@@ -28,8 +32,11 @@ export default function Gallery() {
 
                 <div className="overflow-hidden rounded-3xl">
                   <img
-                    src={item.image_path}
+                    src={getCompressedImageSrc(item.image_path)}
+                    onError={handleCompressedImageFallback(item.image_path)}
                     alt={item.name}
+                    loading="lazy"
+                    decoding="async"
                     className="aspect-[4/3] w-full object-cover"
                   />
                 </div>

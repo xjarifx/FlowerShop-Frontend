@@ -1,3 +1,8 @@
+import {
+  getCompressedImageSrc,
+  handleCompressedImageFallback,
+} from "../utils/compressedImage";
+
 const keyTerms = [
   "A signed agreement and 30% retainer confirms your date.",
   "Final invoice is due 5 days before delivery or installation.",
@@ -51,8 +56,11 @@ export default function ContractPage() {
           <div className="space-y-7">
             <div className="overflow-hidden rounded-3xl">
               <img
-                src="/assets/6.jpg"
+                src={getCompressedImageSrc("/assets/6.jpg")}
+                onError={handleCompressedImageFallback("/assets/6.jpg")}
                 alt="Floral contract planning"
+                loading="lazy"
+                decoding="async"
                 className="h-96 w-full object-cover sm:h-128"
               />
             </div>
