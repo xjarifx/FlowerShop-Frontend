@@ -1,7 +1,3 @@
-import {
-  getCompressedImageSrc,
-  handleCompressedImageFallback,
-} from "../utils/compressedImage";
 import { Link } from "react-router-dom";
 
 const keyTerms = [
@@ -57,8 +53,7 @@ export default function ContractPage() {
           <div className="space-y-7">
             <div className="overflow-hidden rounded-3xl">
               <img
-                src={getCompressedImageSrc("/assets/6.jpg")}
-                onError={handleCompressedImageFallback("/assets/6.jpg")}
+                src="/assets/6.jpg"
                 alt="Floral contract planning"
                 loading="lazy"
                 decoding="async"

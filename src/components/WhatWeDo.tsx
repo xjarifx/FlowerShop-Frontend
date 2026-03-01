@@ -1,8 +1,3 @@
-import {
-  getCompressedImageSrc,
-  handleCompressedImageFallback,
-} from "../utils/compressedImage";
-
 const services = [
   {
     number: "1",
@@ -49,8 +44,7 @@ export default function WhatWeDo() {
               </p>
 
               <img
-                src={getCompressedImageSrc(service.image)}
-                onError={handleCompressedImageFallback(service.image)}
+                src={service.image}
                 alt={service.title}
                 loading="lazy"
                 decoding="async"

@@ -1,7 +1,3 @@
-import {
-  getCompressedImageSrc,
-  handleCompressedImageFallback,
-} from "../utils/compressedImage";
 import { Link } from "react-router-dom";
 
 const featureImages = [
@@ -37,8 +33,7 @@ export default function AboutPage() {
             <div className="grid gap-5 md:grid-cols-[minmax(0,17rem)_1fr] md:items-start">
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src={getCompressedImageSrc("/assets/owner.jpg")}
-                  onError={handleCompressedImageFallback("/assets/owner.jpg")}
+                  src="/assets/owner.jpg"
                   alt="Founder portrait"
                   loading="lazy"
                   decoding="async"
@@ -63,8 +58,7 @@ export default function AboutPage() {
               {featureImages.map((image) => (
                 <img
                   key={image.src}
-                  src={getCompressedImageSrc(image.src)}
-                  onError={handleCompressedImageFallback(image.src)}
+                  src={image.src}
                   alt={image.alt}
                   loading="lazy"
                   decoding="async"
@@ -81,8 +75,7 @@ export default function AboutPage() {
 
             <div className="mt-8 overflow-hidden rounded-2xl">
               <img
-                src={getCompressedImageSrc("/assets/28.jpg")}
-                onError={handleCompressedImageFallback("/assets/28.jpg")}
+                src="/assets/28.jpg"
                 alt="Pink tulips"
                 loading="lazy"
                 decoding="async"

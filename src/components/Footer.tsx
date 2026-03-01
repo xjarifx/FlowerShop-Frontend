@@ -1,8 +1,4 @@
 import { footerSection } from "../data/siteData";
-import {
-  getCompressedImageSrc,
-  handleCompressedImageFallback,
-} from "../utils/compressedImage";
 
 export default function Footer() {
   return (
@@ -10,8 +6,7 @@ export default function Footer() {
       <div className="w-full overflow-hidden rounded-t-3xl">
         <div className="relative">
           <img
-            src={getCompressedImageSrc(footerSection.image_path)}
-            onError={handleCompressedImageFallback(footerSection.image_path)}
+            src={footerSection.image_path}
             alt={footerSection.image_alt}
             loading="lazy"
             decoding="async"

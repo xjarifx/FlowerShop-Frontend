@@ -1,9 +1,5 @@
 import SpecialOffer from "./SpecialOffer";
 import { heroSection } from "../data/siteData";
-import {
-  getCompressedImageSrc,
-  handleCompressedImageFallback,
-} from "../utils/compressedImage";
 
 export default function HeroSection() {
   return (
@@ -15,8 +11,7 @@ export default function HeroSection() {
 
         <div className="relative mt-6 overflow-hidden rounded-4xl">
           <img
-            src={getCompressedImageSrc(heroSection.image_path)}
-            onError={handleCompressedImageFallback(heroSection.image_path)}
+            src={heroSection.image_path}
             alt={heroSection.image_alt}
             loading="eager"
             fetchPriority="high"
