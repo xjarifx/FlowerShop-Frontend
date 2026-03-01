@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
@@ -10,6 +11,7 @@ import WhatWeDo from "./components/WhatWeDo";
 import WorkWithUsSection from "./components/WorkWithUsSection";
 import Footer from "./components/Footer";
 import ContractPage from "./components/ContractPage";
+import { startBackgroundImagePrefetch } from "./utils/prefetchImages";
 
 function HomePage() {
   return (
@@ -58,6 +60,10 @@ function ContractRoutePage() {
 }
 
 export default function App() {
+  useEffect(() => {
+    startBackgroundImagePrefetch();
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>

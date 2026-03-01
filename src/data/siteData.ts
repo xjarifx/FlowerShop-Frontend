@@ -1,4 +1,4 @@
-import databaseDump from "../../data/fetchedData.json";
+import databaseDump from "../../databaseDump/fetchedData.json";
 
 type HeroSectionRow = {
   id: number;
