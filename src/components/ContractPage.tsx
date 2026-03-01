@@ -2,6 +2,7 @@ import {
   getCompressedImageSrc,
   handleCompressedImageFallback,
 } from "../utils/compressedImage";
+import { Link } from "react-router-dom";
 
 const keyTerms = [
   "A signed agreement and 30% retainer confirms your date.",
@@ -79,19 +80,19 @@ export default function ContractPage() {
               </ul>
 
               <div className="mt-6 flex flex-wrap gap-3">
-                <a
-                  href="/#work-with-us"
+                <Link
+                  to="/#work-with-us"
                   className="inline-flex items-center gap-2 rounded-sm bg-amber-300 px-3 py-1.5 text-xs font-extrabold tracking-wide text-zinc-900 uppercase transition-opacity hover:opacity-85"
                 >
                   <span aria-hidden="true">•</span>
                   <span>Request Full Contract</span>
-                </a>
-                <a
-                  href="/about"
+                </Link>
+                <Link
+                  to="/about"
                   className="inline-flex items-center rounded-sm border border-zinc-400 px-3 py-1.5 text-xs font-extrabold tracking-wide text-zinc-900 uppercase transition-opacity hover:opacity-75"
                 >
                   About Our Studio
-                </a>
+                </Link>
               </div>
             </div>
           </div>

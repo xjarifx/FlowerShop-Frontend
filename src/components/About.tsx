@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type AboutProps = {
   id?: string;
   eyebrow?: string;
@@ -26,13 +28,13 @@ export default function About({
           {title}
         </h2>
 
-        <a
-          href={ctaHref}
+        <Link
+          to={ctaHref}
           className="mt-10 inline-flex items-center gap-2 rounded-md bg-amber-300 px-5 py-2.5 text-base font-extrabold text-zinc-900 transition-opacity hover:opacity-85"
         >
           <span aria-hidden="true">•</span>
           <span>{ctaLabel}</span>
-        </a>
+        </Link>
       </div>
     </section>
   );

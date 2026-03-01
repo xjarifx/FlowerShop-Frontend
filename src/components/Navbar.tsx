@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,12 +15,12 @@ export default function Navbar() {
     <header className="bg-zinc-100 px-4 pt-5 pb-4">
       <nav className="w-full">
         <div className="flex items-center justify-between">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="font-brand text-4xl leading-none text-zinc-900"
           >
             Our Blooms
-          </a>
+          </Link>
 
           <button
             type="button"
@@ -51,12 +52,12 @@ export default function Navbar() {
           <ul className="hidden items-center gap-10 text-sm font-semibold tracking-wide text-zinc-900 uppercase md:flex">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="transition-opacity hover:opacity-70"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -66,13 +67,13 @@ export default function Navbar() {
           <ul className="mt-4 flex flex-col gap-3 text-sm font-semibold tracking-wide text-zinc-900 uppercase md:hidden">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="block transition-opacity hover:opacity-70"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

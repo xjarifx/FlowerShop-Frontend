@@ -2,6 +2,7 @@ import {
   getCompressedImageSrc,
   handleCompressedImageFallback,
 } from "../utils/compressedImage";
+import { Link } from "react-router-dom";
 
 const featureImages = [
   { src: "/assets/6.jpg", alt: "Pink stems" },
@@ -95,13 +96,13 @@ export default function AboutPage() {
               ))}
             </div>
 
-            <a
-              href="/#work-with-us"
+            <Link
+              to="/#work-with-us"
               className="mt-7 inline-flex items-center gap-2 rounded-sm bg-amber-300 px-3 py-1.5 text-[0.62rem] font-extrabold tracking-wide text-zinc-900 uppercase transition-opacity hover:opacity-85"
             >
               <span aria-hidden="true">•</span>
               <span>BOOK A CONSULTATION TODAY</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
