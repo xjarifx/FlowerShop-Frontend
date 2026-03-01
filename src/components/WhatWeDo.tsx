@@ -1,7 +1,7 @@
 const services = [
   {
     number: "1",
-    image: "/assets/20.jpg",
+    image: "/assets/17.jpg",
     title: "FLORAL INSTALLATIONS",
     description: "Living art for homes, businesses, and events.",
   },

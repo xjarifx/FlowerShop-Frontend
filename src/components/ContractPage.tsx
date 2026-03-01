@@ -51,7 +51,7 @@ export default function ContractPage() {
           <div className="space-y-7">
             <div className="overflow-hidden rounded-3xl">
               <img
-                src="/assets/17.jpg"
+                src="/assets/6.jpg"
                 alt="Floral contract planning"
                 className="h-96 w-full object-cover sm:h-128"
               />
