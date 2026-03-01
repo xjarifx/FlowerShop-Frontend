@@ -39,7 +39,11 @@ export default function Navbar() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                d={
+                  isMenuOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
+                }
               />
             </svg>
           </button>
@@ -47,7 +51,10 @@ export default function Navbar() {
           <ul className="hidden items-center gap-10 text-sm font-semibold tracking-wide text-zinc-900 uppercase md:flex">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="transition-opacity hover:opacity-70">
+                <a
+                  href={link.href}
+                  className="transition-opacity hover:opacity-70"
+                >
                   {link.label}
                 </a>
               </li>
