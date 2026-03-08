@@ -28,13 +28,23 @@ export default function About({
           {title}
         </h2>
 
-        <Link
-          to={ctaHref}
-          className="mt-10 inline-flex items-center gap-2 rounded-md bg-amber-300 px-5 py-2.5 text-base font-extrabold text-zinc-900 transition-opacity hover:opacity-85"
-        >
-          <span aria-hidden="true">•</span>
-          <span>{ctaLabel}</span>
-        </Link>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            to={ctaHref}
+            className="inline-flex items-center gap-2 rounded-md bg-amber-300 px-5 py-2.5 text-base font-extrabold text-zinc-900 transition-opacity hover:opacity-85"
+          >
+            <span aria-hidden="true">•</span>
+            <span>{ctaLabel}</span>
+          </Link>
+          
+          <Link
+            to="/coming-soon"
+            className="inline-flex items-center gap-2 rounded-md border-2 border-amber-300 bg-zinc-100 px-5 py-2.5 text-base font-extrabold text-zinc-900 transition-opacity hover:opacity-85"
+          >
+            <span aria-hidden="true">•</span>
+            <span>CONTACT US</span>
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-zinc-100 px-4 pt-5 pb-4">
+    <header className="sticky top-0 z-50 bg-zinc-100 px-4 pt-5">
       <nav className="w-full">
         <div className="flex items-center justify-between">
           <Link

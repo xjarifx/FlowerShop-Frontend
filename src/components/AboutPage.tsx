@@ -91,7 +91,7 @@ export default function AboutPage() {
             </div>
 
             <Link
-              to="/#work-with-us"
+              to="/coming-soon"
               className="mt-7 inline-flex items-center gap-2 rounded-sm bg-amber-300 px-3 py-1.5 text-[0.62rem] font-extrabold tracking-wide text-zinc-900 uppercase transition-opacity hover:opacity-85"
             >
               <span aria-hidden="true">•</span>

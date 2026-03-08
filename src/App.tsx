@@ -11,6 +11,7 @@ import WhatWeDo from "./components/WhatWeDo";
 import WorkWithUsSection from "./components/WorkWithUsSection";
 import Footer from "./components/Footer";
 import ContractPage from "./components/ContractPage";
+import ComingSoon from "./components/ComingSoon";
 import { startBackgroundImagePrefetch } from "./utils/prefetchImages";
 
 function HomePage() {
@@ -59,6 +60,10 @@ function ContractRoutePage() {
   );
 }
 
+function ComingSoonPage() {
+  return <ComingSoon />;
+}
+
 export default function App() {
   useEffect(() => {
     startBackgroundImagePrefetch();
@@ -71,6 +76,7 @@ export default function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/about" element={<AboutRoutePage />} />
         <Route path="/contract" element={<ContractRoutePage />} />
+        <Route path="/coming-soon" element={<ComingSoonPage />} />
       </Routes>
     </BrowserRouter>
   );
